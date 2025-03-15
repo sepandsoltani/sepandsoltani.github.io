@@ -8,5 +8,5 @@ group :jekyll_plugins do
   gem 'jemoji'
   gem 'webrick', '~> 1.8'
 end
-
+gem "base64", "0.1.1"
 gem 'github-pages'

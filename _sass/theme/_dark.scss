@@ -2,26 +2,27 @@
    DARK THEME
    ========================================================================== */
 
-/* Color codes used for the theme */
-$gray                       : #7a8288;
-$dark-gray                  : mix(#000, $gray, 40%);
-$darker-gray                : mix(#000, $gray, 60%);
-$light-gray                 : mix(#fff, $gray, 50%);
+$gray: #7a8288;
+$dark-gray: mix(#000, $gray, 40%);
+$darker-gray: mix(#000, $gray, 60%);
+$light-gray: mix(#fff, $gray, 50%);
+$lighter-gray: mix(#fff, $gray, 90%);
+$body-color: #252a34;
 
-$background                 : #474747;
+
+$background: #202124; //#181818;
 $background-light           : mix(#fff, $background, 80%);
 $background-lighter         : mix(#fff, $background, 90%);
-$text                       : #ffffff;
-$link                       : #0ea1c5;
-$link-dark                  : mix(#000, $link, 25%);
-$link-light                 : mix(#fff, $link, 25%);
-
-/* Color codes used for the site */
-$danger-color               : #ee5f5b;
-$info-color                 : #2f7f93;
+$code-background: mix(#000, $background, 15%);
+$code-background-dark: mix(#000, $background, 20%);
+$text: #eaeaea;
+$border: mix(#fff, $background, 20%);
+$primary-color: #919191;
+$success-color: #62c462;
+$warning-color: #f89406;
+$danger-color: #ee5f5b;
+$info-color: #52adc8;
 $notice-color               : #7a8288;
-$success-color              : #62c462;
-$warning-color              : #f89406;
 
 /* Other basic settings for the template */
 $border-radius              : 4px;
@@ -33,6 +34,18 @@ $navicon-height             : 4px;
 $sidebar-link-max-width     : 250px;
 $sidebar-screen-min-width   : 1024px;
 
+
+
+$link: mix(#000, $info-color, 15%) !default;
+$link-hover: mix(#000, $link, 25%) !default;
+$link-visited: mix(#fff, $link, 15%) !default;
+$masthead-link-color: $primary-color !default;
+$masthead-link-color-hover: mix(#000, $primary-color, 25%) !default;
+$navicon-link-color-hover: mix(#fff, $primary-color, 75%) !default;
+
+
+
+
 /* Dark theme for the site */
 :root {
     --global-base-color                 : #{$background};
@@ -42,8 +55,8 @@ $sidebar-screen-min-width   : 1024px;
     --global-code-text-color            : #{$darker-gray};
     --global-fig-caption-color          : #{$dark-gray};
     --global-link-color                 : #{$link};
-    --global-link-color-hover           : #{$link-dark};
-    --global-link-color-visited         : #{$link-light};    
+    --global-link-color-hover           : #{$link-hover};
+    --global-link-color-visited         : #{$link-visited};    
     --global-masthead-link-color        : #{$text};
     --global-masthead-link-color-hover  : #{$background-light};    
     --global-text-color                 : #{$text};
