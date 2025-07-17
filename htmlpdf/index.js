@@ -15,7 +15,7 @@ const path = require('path');
 
   const pdf = await page.pdf({
     path: path.join(__dirname, '../files/Sepand_Soltani_cv.pdf'),
-    margin: { top: '50px', right: '20px', bottom: '50px', left: '20px' },
+    margin: { top: '20px', right: '20px', bottom: '20px', left: '20px' },
     printBackground: true,
     format: 'A4',
   });
