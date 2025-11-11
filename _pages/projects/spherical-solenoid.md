@@ -39,14 +39,14 @@ Spherical solenoid consists of current-carrying rings wound in parallel on a sph
 <html>
 <body>
     <center>
-                <img src='/files/medvispy/solenoid1.gif'>
+                <img src='/files/solenoid/solenoid1.gif'>
     </center>
 </body>
 </html>
 
 Although spherical solenoids are merely a type of hypothetical electromagnet that don't really have a practical use at the moment, studying them could teach us a lot about electromagnetism.
 
-For calculating the magnetic field caused by this type of soleniods, we must first segment the solenoid in to $n$ seperate parallel rings each with different radiuses related to their relative height.
+For calculating the magnetic field caused by this type of soleniods, we must first segment the solenoid in to \(n\) seperate parallel rings each with different radiuses related to their relative height.
 
 <h2>
 Magnetic field caused by a single ring of wire
@@ -56,20 +56,20 @@ According to the Biot–Savart law, the magnetic field caused by a single ring i
 
  $$\overrightarrow{B} = \frac{\mu_{0}I}{4\pi}\oint_{}^{}\frac{\overrightarrow{\ dl} \times \overrightarrow{R}}{|R|^{3}} .$$
 
-Where $\overrightarrow{R}$ is the displacement vector from the wire at point $l$ to the point at which the field is being computed.
+Where \(\overrightarrow{R}\) is the displacement vector from the wire at point \(l\) to the point at which the field is being computed.
 
-We can define $B$ as the radius of the solenoid thefore we can define $b$ as the radius of the ring at height of ${z_{0}}$ from the solenoid's center.
+We can define \(B\) as the radius of the solenoid thefore we can define \(b\) as the radius of the ring at height of \({z_{0}}\) from the solenoid's center.
 
 $$b = \sqrt{B^{2} - {z_{0}}^{2}}$$
 
-We then define ${\overrightarrow{\ dl}}$ in the polar coordinates
+We then define \({\overrightarrow{\ dl}}\) in the polar coordinates
 
 $$\overrightarrow{dl} = bd\varphi'{\widehat{a}}_{\varphi}$$
 
 $$\overrightarrow{dl} = ( - b\sin(\varphi){\widehat{a}}_{x} + b\ cos(\varphi){\widehat{a}}_{y})d\varphi'$$
 
 
-The displacement vector $r$ is the distance from arbitrary point in space, $P(r_{0},\theta_{0},\varphi_{0})$ , to the coordinates origin.
+The displacement vector \(r\) is the distance from arbitrary point in space, \(P(r_{0},\theta_{0},\varphi_{0})\) , to the coordinates origin.
 
 $$
 \overrightarrow{r} = r_{0}{\widehat{a}}_{r} + \theta_{0}{\widehat{a}}_{\theta} + \varphi_{0}{\widehat{a}}_{\varphi}$$
@@ -78,7 +78,7 @@ $$\overrightarrow{r} = r_{0}\sin\left( \theta_{0} \right)\cos\left( \varphi_{0} 
 $$
 
 
-Vector $r'$ is defined as the displacement vector of $dl$ to the coordinates origin as well.
+Vector \(r'\) is defined as the displacement vector of \(dl\) to the coordinates origin as well.
 
 
 $$
@@ -88,7 +88,7 @@ $$\overrightarrow{r^{'}} = \sqrt{B^{2} - {z_{0}}^{2}}\cos(\varphi'){\widehat{a}}
 $$
 
 
-By subtracting $\overrightarrow{r}$ and $\overrightarrow{r'}$ we can derive $\overrightarrow{R}$, the displacement vector of point $P(r_{0},\theta_{0},\varphi_{0})$ to the wire element $dl$
+By subtracting \()\overrightarrow{r}\) and \(\overrightarrow{r'}\) we can derive \(\overrightarrow{R}\), the displacement vector of point \(P(r_{0},\theta_{0},\varphi_{0})\) to the wire element \(dl\)
 
 $$\overrightarrow{R} = \overrightarrow{r} - \overrightarrow{r}
 \\
@@ -109,7 +109,7 @@ $$
 
 
 
-At last, we derive the cross product of ${\overrightarrow{\ dl}}$ and ${\overrightarrow{\ R}}$ as
+At last, we derive the cross product of \({\overrightarrow{\ dl}}\) and \({\overrightarrow{\ R}}\) as
 
 $$
  \overrightarrow{\ dl} \times \overrightarrow{R} = - \cos\left( \varphi^{'} \right)\sqrt{B^{2} - {z_{0}}^{2}}\left( z_{0} - r_{0}\cos\left( \theta_{0} \right) \right)d\varphi' {\widehat{a}}_{x} +
@@ -122,7 +122,7 @@ $$
 {( - \cos}{\left( {\varphi_{0} - \varphi}^{'} \right){r_{0}\sin}\left( \theta_{0} \right)}\sqrt{B^{2} - {z_{0}}^{2}} + B^{2} - {z_{0}}^{2}{)d\varphi' \widehat{a}}_{z}$$
 
 
-With placing the derived expressions in the Biot–Savart Law Formula we can derive the magnetic field cause by a single ring at the height of ${z_{0}}$ at the point of $P(r_{0},\theta_{0},\varphi_{0})$:
+With placing the derived expressions in the Biot–Savart Law Formula we can derive the magnetic field cause by a single ring at the height of \({z_{0}}\) at the point of \(P(r_{0},\theta_{0},\varphi_{0})\):
 
 
 $${\overrightarrow{B}}_{x} =
@@ -147,7 +147,7 @@ $$
 <h2>
 Generalization to all rings
 </h2>
-If we assume the center of the sphere with radius of $B$ is at coordinates origin, the height of the center of the parallel rings is between $-B$ and $B$.
+If we assume the center of the sphere with radius of \(B\) is at coordinates origin, the height of the center of the parallel rings is between \(-B\) and \(B\).
 
 $$- B < z_{0} < B
 $$
@@ -171,7 +171,9 @@ $${\overrightarrow{B}}_{x_{total}} = \sum_{i = 1}^{n}{\overrightarrow{B_{x}}\lef
 {\overrightarrow{B}}_{z_{total}} = \sum_{i = 1}^{n}{\overrightarrow{B_{z}}\left( {z_{0}}_{i} \right)}
 $$
 
-# MATLAB Implementation
+<h2>
+MATLAB Implementation
+</h2>
 
 The derived formula was then implemented using MATLAB and the heatmap plot was calculated on multiple planes.
 
