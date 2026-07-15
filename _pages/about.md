@@ -7,9 +7,13 @@ redirect_from:
   - /about/
   - /about.html
 ---
-Hi, I'm Sepand. I am a Medical Device Engineering Master's student at the University of Claude Bernard Lyon 1. I previously received my Bachelor of Science in Electrical Engineering from K.N. Toosi University of Technology in Iran.
 
-My passion is centered around the applications of **Machine Learning** and **Neural Networks** in medical image processing and analysis.
+Hi, I'm Sepand. I hold a Master's in Medical Device Engineering from Polytech Lyon and a Bachelor of Science in Electrical Engineering from K.N. Toosi University of Technology.
 
-I'm well-versed in programming languages like **Python**, **C++** and **MATLAB**. I've developed countless Python projects focusing on broad subjects such as medical image visualization in [my bachelor thesis](projects/medvispy) and multiple neural networks projects which you can find more detail on my [CV](/cv/). I've also done multiple projects in C++ and MATLAB. I've put the source code and a short description of some of them on the [projects](/projects/) page.
+My work focuses on medical image processing, Software as a Medical Device (SaMD), and building reliable, traceable software solutions.
+
+I work primarily with **C++** and **Python**, along with frameworks like **Qt** and various medical imaging tools. Over the last few years, I've developed a 3D medical image visualization tool for my bachelor's thesis ([MedVisPy](/projects/medvispy)), worked as a C++/Qt software developer, and contributed to brain PET imaging research during my [master's internship](/projects/image-derived-input-function/
+) at CERMEP in Lyon.
+
+You can find more details about my background on my [CV](/cv/), and you can check out the source code and descriptions of my work on the [projects](/projects/) page or head straight to my [github](https://github.com/somso2e/) to check out my codes.
 

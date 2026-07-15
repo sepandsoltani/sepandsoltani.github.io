@@ -11,7 +11,7 @@ const path = require('path');
   await page.goto(`file:${path.join(__dirname, '../_pages/cv.html')}`);
 
   await page.emulateMediaType('screen');
-  await page.evaluate(() => document.body.style.zoom = 0.9);
+  await page.evaluate(() => document.body.style.zoom = 0.90);
 
   const pdf = await page.pdf({
     path: path.join(__dirname, '../files/Sepand_Soltani_cv.pdf'),
